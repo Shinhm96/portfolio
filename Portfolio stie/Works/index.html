@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HM Portfolio Website</title>
+
+    <meta name="author" content="HM Shin">
+    <meta name="description" content="This is Shin Heemyung's portfolio site.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-sacle=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- http://ogp.me/ -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="HM Portfolio">
+    <meta property="og:title" content="Hello! My name is Shin Heemyung. It's my portfolio website">
+    <meta property="og:description" content="You can check my introduction, contact information, and works.">
+    <meta property="og:image" content="img/name_log.svg">
+    <meta property="og:url" content="#">
+
+    <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="HM Portfolio">
+    <meta property="twitter:title" content="Hello! My name is Shin Heemyung. It's my portfolio website">
+    <meta property="twitter:description" content="You can check my introduction, contact information, and works.">
+    <meta property="twitter:image" content="img/name_log.svg">
+    <meta property="twitter:url" content="#">
+
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+    <link rel="icon" href="img/name_log.svg">
+    <link rel="apple-touch-icon" href="img/name_log.svg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="(max-width: 1024px)" href="css/main_medium.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="css/main_small.css">
+</head>
+<body>
+<div class="body__container">
+
+    <!-- HEADER -->
+    <div class="header--fixed">
+        <header class="section">
+            <div class="inner clearfix">
+
+                <div class="logo float--left">
+                    <a href="../Main/index.html">
+                        <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 626 284.4" style="enable-background:new 0 0 626 284.4;" xml:space="preserve">
+                        <style type="text/css">.st0{fill:#231815;}</style>
+                        <polygon class="st0" points="626,284.4 498.5,0 498.1,0 430.2,0 429.7,0 388.6,91.8 347,0 346.9,0 278.7,0 278.6,0 228.3,112.2 
+                            145.3,112.7 195.8,0 127.4,0 0,284.4 68.4,284.4 120.5,168 203.5,167.5 151.1,284.4 219.5,284.4 313,75.8 354.6,167.7 302.3,284.4 
+                            370.6,284.4 464.1,75.8 557.6,284.4 "/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="darkmode">
+                    <input type="checkbox" onclick="darkMode()" id="darkmodeBtn">
+                    <label for="darkmodeBtn" calss="darkmodeImg"></label>
+                </div>
+
+                <div class="menu-group float--right">
+                    <ul>
+                        <li><a href="../Works/index.html">WORKS</a></li>
+                        <li><a href="../About/index.html">ABOUT</a></li>
+                        <li><a href="../Skill/index.html">SKILL</a></li>
+                        <li><a href="../Contact/index.html">CONTENT</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </header>
+    </div>
+
+    <!-- WORK-SUMMARY -->
+    <section class="section section--summary">
+        <div class="inner">
+
+            <div class="summary__container">
+                <h1>포트폴리오 페이지입니다.</h1>
+                <h1>웹디자인 이외의 작품도 확인하실 수 있습니다.</h1>
+                <h1>I love <span class="text-typewriter"></span><span class="cursor typing">&nbsp;</span></h1>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ACCORDION -->
+    <section class="section section--accordion">
+        
+        <div class="accordion__container">
+            <div class="box1">
+                <h2>Web & Moblie</h2>
+                <ul class="box__text">
+                    <li>2019</li>
+                    <li>Website redesign</li>
+                </ul>
+            </div>
+        </div>
+        <div class="accordion__container">
+            <div class="box2">
+                <h2>Web & Moblie</h2>
+            </div>
+        </div>
+        <div class="accordion__container">
+            <div class="box3">
+                <h2>Poster</h2>
+            </div>
+        </div>
+        <div class="accordion__container">
+            <div class="box4">
+                <h2>Branding</h2>
+            </div>
+        </div>
+        <div class="accordion__container">
+            <div class="box5">
+                <h2>Branding</h2>
+            </div>
+        </div>
+        <div class="accordion__container">
+            <div class="box6">
+                <h2>Book</h2>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="section section--footer">
+        <div class="inner clearfix">
+
+            <ul class="icon-links float--left">
+                <li>
+                    <a href="#" class="fab fa-github-square"></a>
+                </li>
+                <li>
+                    <a href="#" class="fab fa-facebook-square"></a>
+                </li>
+                <li>
+                    <a href="#" class="fab fa-instagram-square"></a>
+                </li>
+            </ul>
+
+            <ul class="footer__summary float--right">
+                <h3> ⓒ Shin Heemyung / 2020</h3>
+            </ul>
+
+        </div>
+    </footer>
+
+</div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://kit.fontawesome.com/f8b5518dfd.js" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>

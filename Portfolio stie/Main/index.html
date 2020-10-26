@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HM Portfolio Website</title>
+
+    <meta name="author" content="HM Shin">
+    <meta name="description" content="This is Shin Heemyung's portfolio site.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-sacle=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- http://ogp.me/ -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="HM Portfolio">
+    <meta property="og:title" content="Hello! My name is Shin Heemyung. It's my portfolio website">
+    <meta property="og:description" content="You can check my introduction, contact information, and works.">
+    <meta property="og:image" content="img/name_log.svg">
+    <meta property="og:url" content="#">
+
+    <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="HM Portfolio">
+    <meta property="twitter:title" content="Hello! My name is Shin Heemyung. It's my portfolio website">
+    <meta property="twitter:description" content="You can check my introduction, contact information, and works.">
+    <meta property="twitter:image" content="img/name_log.svg">
+    <meta property="twitter:url" content="#">
+
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+    <link rel="icon" href="img/name_log.svg">
+    <link rel="apple-touch-icon" href="img/name_log.svg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="(max-width: 1024px)" href="css/main_medium.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="css/main_small.css">
+</head>
+<body>
+<div class="body__container">
+
+    <!-- HEADER -->
+    <header class="section">
+        <div class="inner">
+
+            <div class="darkmode">
+                <input type="checkbox" onclick="darkMode()" id="darkmodeBtn">
+                <label for="darkmodeBtn" calss="darkmodeImg"></label>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- VISUAL -->
+    <section class="section section--visual">
+        <div class="inner">
+
+            <div class="summary summary__top">
+                <h1>Hi</h1>
+                <h1></h1>
+                <h1>i'm Heemyung</h1>
+            </div>
+            <div class="summary summary__bottom">
+                <h1></h1>
+                <h1>front end.</h1>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section section--menu">
+
+            <div class="menu menu__top">
+                <a href="../Works/index.html" class="works" data-hover="orks">W</a>
+                <a href="../About/index.html" class="about" data-hover="bout">A</a>
+            </div>
+
+            <div id='logo'>
+                <svg viewBox="0 0 100 100">
+                    <path id="logoText" fill="none" stroke="none" d=" M 25,50
+                a 25,25 0 0,1 50,0
+                a 25,25 0 0,1 -50,0" />
+                    <text dy="-2">
+                        <textPath href="#logoText">
+                            Welcome to my portfolio website.
+                        </textPath>
+                    </text>
+                </svg>
+                <div class="logoCircleOutside"></div>
+                <div class="logoCircleInside"></div>
+                <div class="logoMark"></div>
+                <svg class="name-logo" width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 625.96 284.37"><defs><style>.cls-1{fill:#231815;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="레이어_1" data-name="레이어 1"><polygon class="cls-1" points="625.96 284.37 498.54 0 498.06 0 430.17 0 429.69 0 388.57 91.77 347.03 0 346.93 0 278.65 0 278.56 0 228.27 112.23 145.29 112.71 195.8 0 127.42 0 0 284.37 68.37 284.37 120.53 167.98 203.5 167.5 151.13 284.37 219.51 284.37 312.96 75.81 354.55 167.69 302.27 284.37 370.64 284.37 464.12 75.76 557.59 284.37 625.96 284.37"/></g></g></svg>
+            </div>
+        
+
+            <div class="menu menu__bottom">
+                <a href="../Skill/index.html" class="skill" data-hover="kill">S</a>
+                <a href="../Contact/index.html" class="contact" data-hover="ontact">C</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="section section--footer">
+        <div class="inner clearfix">
+
+            <ul class="icon-links float--left">
+                <li>
+                    <a href="#" class="fab fa-github-square"></a>
+                </li>
+                <li>
+                    <a href="#" class="fab fa-facebook-square"></a>
+                </li>
+                <li>
+                    <a href="#" class="fab fa-instagram-square"></a>
+                </li>
+            </ul>
+
+            <ul class="footer__summary float--right">
+                <h3> ⓒ Shin Heemyung / 2020</h3>
+            </ul>
+
+        </div>
+    </footer>
+
+    <!-- CURSOR -->
+    <div class="cursor"></div>
+
+</div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://kit.fontawesome.com/f8b5518dfd.js" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
