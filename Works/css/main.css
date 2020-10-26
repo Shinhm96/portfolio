@@ -269,6 +269,44 @@ input[type="checkbox"]:checked ~ label:after {
   position: relative;
 }
 
+.accordion__container .box1 {
+  background-image: url("../../img/Musinsa.png");
+  background-position: right;
+  background-size: cover;
+  border: none;
+}
+
+.accordion__container .box2 {
+  background-image: url("#");
+  background-position: right;
+  background-size: cover;
+}
+
+.accordion__container .box3 {
+  background-image: url("../../img/poster.png");
+  background-position: right;
+  background-size: cover;
+  border: none;
+}
+
+.accordion__container .box4 {
+  background-image: url("#");
+  background-position: right;
+  background-size: cover;
+}
+
+.accordion__container .box5 {
+  background-image: url("#");
+  background-position: right;
+  background-size: cover;
+}
+
+.accordion__container .box6 {
+  background-image: url("#");
+  background-position: right;
+  background-size: cover;
+}
+
 .accordion__container h2 {
   width: 150px;
   height: 25px;
@@ -280,10 +318,12 @@ input[type="checkbox"]:checked ~ label:after {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px 5px rgba(0, 0, 0, 0.45);
 }
 
 .accordion__container:hover h2 {
   transform: rotate(0);
+  border-top: none;
 }
 
 .accordion__container .box__text {

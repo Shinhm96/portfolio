@@ -274,7 +274,7 @@ input[type="checkbox"]:checked ~ label:after {
   text-indent: -9999px;
   width: 50%;
   height: 100%;
-  background: url("../img/KakaoTalk_Photo_2020-10-26-15-02-41.jpeg");
+  background: url("../../img/profile.png");
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
