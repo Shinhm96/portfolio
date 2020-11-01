@@ -26,6 +26,8 @@
   font-weight: 400;
   color: var(--black-color);
   background: var(--white-color);
+  overflow: hidden;
+  height: 100vh;
 }
 
 a {
@@ -65,20 +67,25 @@ a {
   position: sticky;
   top: 0px;
   z-index: 1000;
+  height: 5%;
+  padding-top: 20px;
+  box-sizing: border-box;
 }
 
 header {
+  height: 100%;
 }
 
 header .inner {
-  justify-content: space-between;
+  height: 100%;
+  display: flex;
   align-items: center;
-  height: 80px;
+  justify-content: space-between;
 }
 
 .logo {
-  margin-top: 25px;
   width: 70px;
+  z-index: 200;
 }
 
 .logo svg {
@@ -95,16 +102,17 @@ header .inner {
 }
 
 /* --drakmode-- */
-.darkmode {
+.darkmode__container {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  width: 500px;
   display: flex;
   justify-content: center;
-  top: -10px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0 auto;
+  align-items: center;
+}
+
+.darkmode {
+  display: flex;
 }
 
 #darkmodeBtn {
@@ -113,7 +121,6 @@ header .inner {
 
 .darkmode label {
   position: relative;
-  top: 40px;
   width: 35px;
   height: 20px;
   text-indent: -9999em;
@@ -162,6 +169,7 @@ input[type="checkbox"]:checked ~ label:after {
 /* --drakmode-- */
 
 .menu-group {
+  z-index: 500;
 }
 
 .menu-group ul {
@@ -169,7 +177,7 @@ input[type="checkbox"]:checked ~ label:after {
 }
 
 .menu-group li {
-  padding: 30px;
+  padding: 0 30px;
   box-sizing: border-box;
 }
 
@@ -185,11 +193,15 @@ input[type="checkbox"]:checked ~ label:after {
   color: var(--black-color);
 }
 
-.menu-group li a:hover {
+.menu-group ul li a:hover {
   color: var(--black-color);
 }
 
 /* WORK-SUMMARY */
+.section--summary {
+  height: 10vh;
+}
+
 .section--summary .inner {
   display: block;
   margin-top: 50px;
@@ -241,8 +253,9 @@ input[type="checkbox"]:checked ~ label:after {
 .section--accordion {
   display: flex;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   padding-top: 100px;
+  box-sizing: border-box;
   margin: auto;
 }
 
@@ -250,16 +263,15 @@ input[type="checkbox"]:checked ~ label:after {
   flex: 1;
   height: 100%;
   transition: 0.8s;
-  color: var(--black-color);
+  padding-bottom: 10vh;
+  box-sizing: border-box;
+  color: #2a2a2a;
+  z-index: 300;
 }
 
 .accordion__container:hover {
   flex: 7;
   transition: 0.8s;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: var(--cover2-color);
 }
 
 .accordion__container div {
@@ -267,6 +279,7 @@ input[type="checkbox"]:checked ~ label:after {
   height: 100%;
   border: 1px dashed tomato;
   position: relative;
+  z-index: 100;
 }
 
 .accordion__container .box1 {
@@ -310,7 +323,7 @@ input[type="checkbox"]:checked ~ label:after {
 .accordion__container h2 {
   width: 150px;
   height: 25px;
-  background: var(--white-color);
+  background: #fefefe;
   border-radius: 0 0 10px 0;
   transform: rotate(90deg);
   transform-origin: 0% 100%;
@@ -332,7 +345,7 @@ input[type="checkbox"]:checked ~ label:after {
   left: 20px;
   opacity: 0;
   transition: 1s;
-  color: var(--white-color);
+  color: #fefefe;
 }
 
 .accordion__container:hover .box__text {
@@ -341,9 +354,19 @@ input[type="checkbox"]:checked ~ label:after {
 
 /* FOOTER */
 .section--footer {
-  height: 70px;
-  padding-top: 120px;
+  width: 100%;
+  height: 60px;
   margin: 0 auto;
+  color: var(--black-color);
+  position: fixed;
+  bottom: 0;
+}
+
+.section--footer .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
 }
 
 .icon-links {
@@ -358,4 +381,7 @@ input[type="checkbox"]:checked ~ label:after {
 
 .icon-links li:hover {
   color: var(--check-color);
+}
+
+.footer__summary {
 }

@@ -27,12 +27,10 @@ function checkMode() {
 
 function darkModeOn() {
     document.body.classList.add("dark-mode");
-    label.style.add("dark-mode");
 }
 
 function darkModeOff() {
     document.body.classList.remove("dark-mode");
-    label.style.remove("dark-mode");
 }
 
 // cursor

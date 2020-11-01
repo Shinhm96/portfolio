@@ -21,10 +21,16 @@ function checkMode() {
     if (colorSwitch.checked) {
         console.log('dark on');
         darkModeOn();
+        localStorage.setItem('dark on',colorSwitch.checked);
     } else {
         console.log('dark off');
         darkModeOff();
+        localStorage.clear;
     }
+}
+
+if(localStorage.getItem('dark on')) {
+    darkModeOn();
 }
 
 function darkModeOn() {
