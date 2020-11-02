@@ -21,16 +21,21 @@ function checkMode() {
     if (colorSwitch.checked) {
         console.log('dark on');
         darkModeOn();
-        localStorage.setItem('dark on',colorSwitch.checked);
+        localStorage.setItem('dark on', this.checked);
     } else {
         console.log('dark off');
         darkModeOff();
-        localStorage.clear;
+        localStorage.removeItem('dark on', this.checked);
     }
 }
 
-if(localStorage.getItem('dark on')) {
+if(localStorage.getItem('dark on', this.checked)) {
     darkModeOn();
+    checkBoxOn();
+}
+
+function checkBoxOn() {
+    document.getElementById("darkmodeBtn").checked = true;
 }
 
 function darkModeOn() {

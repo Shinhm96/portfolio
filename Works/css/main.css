@@ -109,6 +109,7 @@ header .inner {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 
 .darkmode {
@@ -134,7 +135,7 @@ input[type="checkbox"]:checked ~ label {
   background: var(--black-color);
 }
 
-label:before {
+.darkmode__container label:before {
   content: "";
   position: absolute;
   top: 3px;
@@ -150,7 +151,7 @@ input[type="checkbox"]:checked ~ label:before {
   transform: translateX(-50px);
 }
 
-label:after {
+.darkmode__container label:after {
   content: "";
   position: absolute;
   top: 3px;
@@ -169,7 +170,8 @@ input[type="checkbox"]:checked ~ label:after {
 /* --drakmode-- */
 
 .menu-group {
-  z-index: 500;
+  position: relative;
+  z-index: 2000;
 }
 
 .menu-group ul {
@@ -177,7 +179,7 @@ input[type="checkbox"]:checked ~ label:after {
 }
 
 .menu-group li {
-  padding: 0 30px;
+  padding: 30px;
   box-sizing: border-box;
 }
 
@@ -195,6 +197,10 @@ input[type="checkbox"]:checked ~ label:after {
 
 .menu-group ul li a:hover {
   color: var(--black-color);
+}
+
+input#menu {
+  display: none;
 }
 
 /* WORK-SUMMARY */

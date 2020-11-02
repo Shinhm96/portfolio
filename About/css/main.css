@@ -25,7 +25,7 @@
   font-weight: 400;
   color: var(--black-color);
   background: var(--white-color);
-  height: 100%;
+  height: 100vh;
 }
 
 a {
@@ -129,6 +129,7 @@ header .inner {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 
 .darkmode {
@@ -136,7 +137,7 @@ header .inner {
 }
 
 #darkmodeBtn {
-  display: none;
+  display: ;
 }
 
 .darkmode label {
@@ -150,11 +151,14 @@ header .inner {
   transition: ease-in 0.5s;
 }
 
-input[type="checkbox"]:checked ~ label {
+.darkmode__container
+  input[type="checkbox"]:checked
+  ~ .darkmode__container
+  label {
   background: var(--black-color);
 }
 
-label:before {
+.darkmode__container label:before {
   content: "";
   position: absolute;
   top: 3px;
@@ -170,7 +174,7 @@ input[type="checkbox"]:checked ~ label:before {
   transform: translateX(-50px);
 }
 
-label:after {
+.darkmode__container label:after {
   content: "";
   position: absolute;
   top: 3px;
@@ -189,7 +193,8 @@ input[type="checkbox"]:checked ~ label:after {
 /* --drakmode-- */
 
 .menu-group {
-  z-index: 500;
+  position: relative;
+  z-index: 2000;
 }
 
 .menu-group ul {
@@ -217,8 +222,13 @@ input[type="checkbox"]:checked ~ label:after {
   color: var(--black-color);
 }
 
+input#menu {
+  display: none;
+}
+
 /* VISUAL */
 .section--visual {
+  height: 100vh;
 }
 
 .section--visual .summary {
@@ -312,10 +322,9 @@ input[type="checkbox"]:checked ~ label:after {
 
 /* WHO */
 .section--who {
-  height: 1300px;
+  height: 80vh;
   padding-top: 200px;
   background: var(--background2-color);
-  box-sizing: border-box;
 }
 
 .section--who .who__summary {
@@ -345,7 +354,6 @@ input[type="checkbox"]:checked ~ label:after {
   text-align: center;
   line-height: 1.5;
   background: var(--box-white);
-  float: left;
 }
 
 .section--who .who__container:hover {
@@ -395,13 +403,13 @@ section--who .inner .hr {
 
 /* HOBBY */
 .hobby__summary {
-  height: 250px;
+  height: 200px;
   background: var(--background2-color);
   display: flex;
   font-size: 50px;
   font-weight: 700;
   justify-content: center;
-  padding: 200px 0 150px 0;
+  padding: 100px 0 0 0;
 }
 
 .hobby__summary div:nth-child(2) {

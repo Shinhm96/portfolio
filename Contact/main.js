@@ -8,10 +8,21 @@ function checkMode() {
     if (colorSwitch.checked) {
         console.log('dark on');
         darkModeOn();
+        localStorage.setItem('dark on');
     } else {
         console.log('dark off');
         darkModeOff();
+        localStorage.clear;
     }
+}
+
+if(localStorage.getItem('dark on')) {
+    darkModeOn();
+    checkBoxOn();
+}
+
+function checkBoxOn() {
+    document.getElementById("darkmodeBtn").checked = true;
 }
 
 function darkModeOn() {
@@ -57,3 +68,10 @@ setInterval(() => {
 function padding(n) {
     return n.toString().padStart(2,"0");
 }
+
+// // menu
+// var wrapperMenu = document.querySelector('.wrapper-menu');
+
+// wrapperMenu.addEventListener('click', function(){
+//   wrapperMenu.classList.toggle('open');  
+// })

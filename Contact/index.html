@@ -43,9 +43,10 @@
     <!-- HEADER -->
     <div class="header--fixed">
         <header class="section">
-            <div class="inner clearfix">
+
+            <div class="inner">
     
-                <div class="logo float--left">
+                <div class="logo">
                     <a href="../index.html">
                         <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 626 284.4" style="enable-background:new 0 0 626 284.4;" xml:space="preserve">
                         <style type="text/css">.st0{fill:#231815;}</style>
@@ -56,12 +57,23 @@
                     </a>
                 </div>
     
-                <div class="darkmode">
-                    <input type="checkbox" onclick="darkMode()" id="darkmodeBtn">
-                    <label for="darkmodeBtn" calss="darkmodeImg"></label>
+                <div class="darkmode__container">
+                    <div class="darkmode">
+                        <input type="checkbox" onclick="darkMode()" id="darkmodeBtn">
+                        <label for="darkmodeBtn" calss="darkmodeImg"></label>
+                    </div>
                 </div>
+
+                <label for="menu" class="menu-btn">
+                    <div class="wrapper-menu">
+                        <div class="line-menu half start"></div>
+                        <div class="line-menu"></div>
+                        <div class="line-menu half end"></div>
+                    </div>
+                </lable>
+                <input type="checkbox" id="menu" name="">
     
-                <div class="menu-group float--right">
+                <div class="menu-group">
                     <ul>
                         <li><a href="../Works/index.html">WORKS</a></li>
                         <li><a href="../About/index.html">ABOUT</a></li>
@@ -80,7 +92,7 @@
 
             <div class="contant__container">
                 <h1>"</h1>
-                <h1>함께 대화를 하고 싶으면 언제든 연락주세요!</h1>
+                <h1>함께 대화를 하고 싶으면<br/>언제든 연락주세요!</h1>
                 <h1>"</h1>
             </div>
 
@@ -130,9 +142,9 @@
 
     <!-- FOOTER -->
     <footer class="section section--footer">
-        <div class="inner clearfix">
+        <div class="inner">
 
-            <ul class="icon-links float--left">
+            <ul class="icon-links">
                 <li>
                     <a href="#" class="fab fa-github-square"></a>
                 </li>
@@ -144,7 +156,7 @@
                 </li>
             </ul>
 
-            <ul class="footer__summary float--right">
+            <ul class="footer__summary">
                 <h3> ⓒ Shin Heemyung / 2020</h3>
             </ul>
 
